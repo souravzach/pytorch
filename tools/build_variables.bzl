@@ -209,7 +209,6 @@ core_sources_full_mobile_no_backend_interface = [
     "torch/csrc/jit/mobile/nnc/context.cpp",
     "torch/csrc/jit/mobile/nnc/registry.cpp",
     "torch/csrc/jit/operator_upgraders/utils.cpp",
-    "torch/csrc/jit/operator_upgraders/upgraders_entry.cpp",
     "torch/csrc/jit/operator_upgraders/upgraders.cpp",
     "torch/csrc/jit/passes/annotate_warns.cpp",
     "torch/csrc/jit/passes/bailout_graph.cpp",
@@ -500,6 +499,7 @@ libtorch_distributed_sources = libtorch_distributed_base_sources + libtorch_dist
 
 jit_sources_full = [
     "torch/csrc/jit/codegen/cuda/interface.cpp",
+    "torch/csrc/jit/operator_upgraders/upgraders_entry.cpp",
     "torch/csrc/jit/passes/lower_graph.cpp",
     "torch/csrc/jit/runtime/register_c10_ops.cpp",
     "torch/csrc/jit/runtime/register_prim_ops.cpp",
