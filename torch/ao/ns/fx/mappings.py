@@ -377,6 +377,7 @@ def get_base_name_to_sets_of_related_ops() -> Dict[str, Set[NSNodeTargetType]]:
         set([
             nn.Dropout,
             F.dropout,
+            nnq.Dropout,
         ]),
     ]
 
@@ -584,6 +585,7 @@ def get_node_type_to_io_type_map() -> Dict[str, Set[NSNodeTargetType]]:
         nnq.ReLU6,
         nnq.Embedding,
         nnq.EmbeddingBag,
+        nnq.Dropout,
         nniq.BNReLU2d,
         nniq.BNReLU3d,
         nniq.ConvReLU1d,
